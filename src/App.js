@@ -6,14 +6,28 @@ import { Container, Button, Row, Col } from 'react-bootstrap';
 
 function App() {
   return (
-    <div className="App">
+    <div className="wrapper bg-dark text-warning">
       <Container>
+
+        {/* title */}
+
         <Row>
           <Col>
-            asdads</Col>
+            <h1 className='mt-5 text-center'>
+              My Movie Collection
+            </h1>
+          </Col>
         </Row>
-      </Container>
+        <hr />
 
+
+        {/* form */}
+        <SearchForm />
+
+        {/* display */}
+        <Display />
+
+      </Container>
 
     </div>
   );
